@@ -9,12 +9,12 @@ pipeline{
   }
     stage('Build'){
      steps {
-      sh 'mvn install' 
+      sh 'npm install' 
     }
    }
      stage('Test'){
       steps {
-       sh 'mvn test' 
+       sh 'npm test' 
    } 
   }
  }
